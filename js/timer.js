@@ -4,7 +4,7 @@ const hoursRef = timerRef.querySelector('[data-value="hours"]');
 const minsRef = timerRef.querySelector('[data-value="mins"]');
 const secsRef = timerRef.querySelector('[data-value="secs"]');
 
-const dateSet = 1631480400000; //13 сентября 2021 => Unix 1631480400000
+const dateSet = new Date(2022, 0, 1); //1 января 2022 => Unix 1631480400000
 setInterval(() => {
   const currentTimer = Date.now();
   const deltaTime = dateSet - currentTimer;
